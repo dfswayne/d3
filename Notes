@@ -1,0 +1,83 @@
+Kenny and I are each creating a git repository that
+we can use to our own experiments, and to make them available
+to one another.
+
+1. If you don't have a login at github.com, get one.
+  
+2. Download and install the latest version of git
+
+https://help.github.com/articles/set-up-git
+   I haven't done any of the password stuff, so I will
+   have to type my login and password each time I upload
+   code.
+
+Executed this:
+git config --global user.email "dfswayne@gmail.com"
+
+
+Now we're creating repositories
+  dfswayne/d3
+  kshirley/d3practice
+
+There were some choices to be made in this process: We created our
+repositories to be public and we're initializing README files.
+
+I now have a repository at this url:
+  https://github.com/dfswayne/d3.git
+
+So I can clone it:
+
+   git clone  https://github.com/dfswayne/d3.git
+
+That created a directory on my laptop named d3.  It has one
+file so far, the README.md file containing my description of the
+repository.
+
+---
+
+We then looked for a while at the code for the Baseball Player
+visualization that Carlos wrote, but it's way too complicated.
+We definitely want to start with the simplest tutorials we can
+find.
+
+
+There are quite a few talks and tutorials on mbostock.github.com/d3,
+like this one:
+
+http://mbostock.github.com/d3/tutorial/bar-1.html 
+
+or this one:
+
+http://bl.ocks.org/3887118   ---  one scatterplot of the iris
+  data, colored by variety.
+
+I grabbed copies of the data and the html code from the second
+example and put them in my own d3 directory, named iris.html and
+iris.tsv.  (I had to edit iris.html to reflect that I had renamed
+the data file.)  If I open iris.html in a browser, I immediately
+see the same plot that I see in the web examples.
+
+Note that I have not yet downloaded a copy of d3.js, but that
+I'm using it over the web.  Carlos says that, as an application
+is shared with more users and gets more hits, it would be more polite
+to run your own server and have your own copy of d3, but I don't
+think I need to do that just yet.
+
+---
+
+If we need to create a local server, like if we're having trouble
+reading our data, instructions are here:
+
+github.com/mbostock/d3/wiki
+
+I don't feel the need to do that yet, either.
+
+---
+
+git add iris.html
+git add iris.tsv
+git commit
+git push 
+
+And that uploaded those two files to my git repository, so that you
+can clone my repository and run that example yourself.
